@@ -4,10 +4,7 @@ function disemvowel(str) {
     let splitting =str.split('');
     for(let i=0;i<splitting.length;i++){
       if(!vowels.includes(splitting[i])){
-        result +=splitting[i]
-  
-       
-        
+        result +=splitting[i]  
       }
     }
   
