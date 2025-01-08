@@ -1,0 +1,12 @@
+function findDifference(a, b) {
+  const result1 = a.reduce((acc, val) => {
+    return acc * val;
+  }, 1);
+
+  const result2 = b.reduce((acc, val) => {
+    return acc * val;
+  }, 1);
+
+  return Math.abs(result2 - result1);
+}
+console.log(findDifference([2, 2, 3], [5, 4, 1]));
