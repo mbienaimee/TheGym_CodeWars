@@ -46,3 +46,24 @@ const factrec = (n) => {
   return n * factrec(n - 1);
 };
 console.log(factrec(5));
+//target
+const targetfanc = (arr, target) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === target) {
+      return i;
+    }
+  }
+  return -1;
+};
+console.log(targetfanc([-5, 2, 10, 4, 6], 10));
+//cartesian product
+const cartesian = (arr1, arr2) => {
+  let result = [];
+  for (let i = 0; i < arr1.length; i++) {
+    for (let j = 0; j < arr2.length; j++) {
+      result.push([arr1[i], arr2[j]]);
+    }
+  }
+  return result;
+};
+console.log(cartesian([1, 2], [3, 4]));
